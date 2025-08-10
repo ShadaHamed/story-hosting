@@ -14,7 +14,7 @@ import { setCookie } from '@/utils/generateToken';
  */
 export async function POST(request: NextRequest) {
     try {
-        const body = await request.json() as LoginUserDto;
+        const body = await request.json() as LoginUserDto;        
         const validation = loginSchema.safeParse(body);
         if (!validation.success) {
             return NextResponse.json(
@@ -24,6 +24,8 @@ export async function POST(request: NextRequest) {
         }
 
         const user = await prisma.user.findUnique({ where: { email: body.email } });
+         console.log('user', user)
+
         if (!user) {
             return NextResponse.json(
                 { message: 'invalid email or password' },

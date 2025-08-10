@@ -17,7 +17,7 @@ const Navbar = ({ isAdmin } : NavbarProps) => {
         <nav className={styles.navbar}>
             <div>
                 <Link href="/" className={styles.logo}>
-                    CLOUD
+                    STORY
                     <GrTechnology />
                     HOSTING
                 </Link>

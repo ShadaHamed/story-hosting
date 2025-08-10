@@ -7,9 +7,9 @@ const Hero = () => {
     return (
         <div className={styles.hero}>
             <div className={styles.heroLeft}>
-                <h1 className={styles.title}>Cloud Hosting</h1>
+                <h1 className={styles.title}>Story Hosting</h1>
                 <p className={styles.desc}>
-                    The best web hosting solution for your online success
+                    The best hosting website for your online stories
                 </p>
                 <div className={styles.services}>
                     <div className={styles.serviceItem}>

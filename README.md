@@ -20,6 +20,20 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Authentication Testing
+
+To help testers verify authentication and role-based access control, the following test accounts are available:
+
+👤 Admin Account
+- Email: admin@email.com  
+- Password: 123admin 
+- Role: Admin
+
+👤 Normal User Account
+- Email: user@email.com  
+- Password: 123user  
+- Role: User
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
